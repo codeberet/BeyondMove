@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by display_value="x_280686_beyondmov.admin" name="x_280686_beyondmov.admin">ffca7df6db312300d65aa08a48961969</assignable_by>
+        <can_delegate>true</can_delegate>
+        <description>Role for a user representing a broker</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_280686_beyondmov.broker</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>broker</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-19 17:53:46</sys_created_on>
+        <sys_id>d5de463adb312300d65aa08a4896198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_280686_beyondmov.broker</sys_name>
+        <sys_package display_value="BeyondMove" source="x_280686_beyondmov">7926bdf2db312300d65aa08a48961974</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BeyondMove">7926bdf2db312300d65aa08a48961974</sys_scope>
+        <sys_update_name>sys_user_role_d5de463adb312300d65aa08a4896198b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-19 17:53:46</sys_updated_on>
+    </sys_user_role>
+</record_update>
