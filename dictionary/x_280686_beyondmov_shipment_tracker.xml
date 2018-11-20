@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Shipment Tracker" max_length="40" name="x_280686_beyondmov_shipment_tracker" type="collection">
+        <element label="current location" mandatory="true" max_length="256" name="current_location" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Tracker timestamp" mandatory="true" max_length="40" name="tracker_timestamp" type="glide_date_time"/>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_280686_beyondmov_shipment_order">x_280686_beyondmov_shipment_order</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>SHI</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-20 03:45:11</sys_created_on>
+        <sys_id>6e461083dbb52300d65aa08a489619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SHI</sys_name>
+        <sys_package display_value="BeyondMove" source="x_280686_beyondmov">7926bdf2db312300d65aa08a48961974</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BeyondMove">7926bdf2db312300d65aa08a48961974</sys_scope>
+        <sys_update_name>sys_number_6e461083dbb52300d65aa08a489619b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-20 03:45:11</sys_updated_on>
+    </sys_number>
+</record_update>

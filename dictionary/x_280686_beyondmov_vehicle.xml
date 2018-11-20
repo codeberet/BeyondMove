@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Vehicle" max_length="40" name="x_280686_beyondmov_vehicle" type="collection">
+        <element label="Has climate control" max_length="40" name="has_climate_control" type="boolean"/>
+        <element label="Manufacturer" mandatory="true" max_length="1024" name="manufacturer" type="string"/>
+        <element label="Max Capacity in Ltrs" mandatory="true" max_length="40" name="max_capacity_in_ltrs" type="integer"/>
+        <element label="Max tonnage" mandatory="true" max_length="40" name="max_tonnage" type="integer"/>
+        <element label="Model" mandatory="true" max_length="1024" name="model" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" reference_qual="roles=x_280686_beyondmov.carrier^EQ" reference_qual_condition="roles=x_280686_beyondmov.carrier^EQ" type="reference"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element hint="Ready for operations" inactive_on_update="false" label="Ready" sequence="1" value="Ready"/>
+                <element hint="Vehicle is out for regular maintainence" inactive_on_update="false" label="Under maintainence" sequence="5" value="Under maintainence"/>
+                <element hint="Retired and out of service" inactive_on_update="false" label="Retired" sequence="15" value="Retired"/>
+            </choice>
+        </element>
+        <element choice="1" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Small" sequence="1" value="Small"/>
+                <element inactive_on_update="false" label="Medium" sequence="5" value="Medium"/>
+                <element inactive_on_update="false" label="Large" sequence="10" value="Large"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>

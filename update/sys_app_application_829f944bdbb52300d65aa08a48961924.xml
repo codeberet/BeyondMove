@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Shipment Tracker</name>
+        <order>100</order>
+        <roles>x_280686_beyondmov.admin,x_280686_beyondmov.broker,x_280686_beyondmov.carrier,x_280686_beyondmov.consignee,x_280686_beyondmov.shipper,x_280686_beyondmov.driver</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-20 04:25:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>829f944bdbb52300d65aa08a48961924</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Shipment Tracker</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BeyondMove" source="x_280686_beyondmov">7926bdf2db312300d65aa08a48961974</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BeyondMove">7926bdf2db312300d65aa08a48961974</sys_scope>
+        <sys_update_name>sys_app_application_829f944bdbb52300d65aa08a48961924</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-20 11:47:49</sys_updated_on>
+        <title>Shipment Tracker</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

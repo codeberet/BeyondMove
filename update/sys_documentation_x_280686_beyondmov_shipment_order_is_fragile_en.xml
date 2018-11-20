@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="is_fragile" label="Is fragile" language="en" table="x_280686_beyondmov_shipment_order">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>is_fragile</element>
+            <help/>
+            <hint/>
+            <label>Is fragile</label>
+            <language>en</language>
+            <name>x_280686_beyondmov_shipment_order</name>
+            <plural>Is fragiles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-11-20 03:53:15</sys_created_on>
+            <sys_id>2c2858c3dbb52300d65aa08a4896192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Is fragile</sys_name>
+            <sys_package display_value="BeyondMove" source="x_280686_beyondmov">7926bdf2db312300d65aa08a48961974</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BeyondMove">7926bdf2db312300d65aa08a48961974</sys_scope>
+            <sys_update_name>sys_documentation_x_280686_beyondmov_shipment_order_is_fragile_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-11-20 03:53:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

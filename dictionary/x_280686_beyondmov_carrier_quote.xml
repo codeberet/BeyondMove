@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Carrier Quote" max_length="40" name="x_280686_beyondmov_carrier_quote" type="collection">
+        <element label="Carrier" mandatory="true" max_length="32" name="carrier" reference="sys_user" reference_qual="roles=x_280686_beyondmov.carrier^EQ" reference_qual_condition="roles=x_280686_beyondmov.carrier^EQ" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Price" max_length="40" name="price" type="float"/>
+        <element label="Quote Generation Date" mandatory="true" max_length="40" name="quote_generation_date" type="glide_date"/>
+        <element label="Shipment Order" mandatory="true" max_length="32" name="shipment_order" reference="x_280686_beyondmov_shipment_order" type="reference"/>
+        <element choice="1" label="state" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Carrier Response" sequence="5" value="Pending Carrier Response"/>
+                <element inactive_on_update="false" label="Carrier Responded" sequence="10" value="Carrier Responded"/>
+                <element inactive_on_update="false" label="Quote Expired" sequence="15" value="Quote Expired"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="carrier"/>
+        </index>
+        <index name="index2">
+            <element name="shipment_order"/>
+        </index>
+    </element>
+</database>

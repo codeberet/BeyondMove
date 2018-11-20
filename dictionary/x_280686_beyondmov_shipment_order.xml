@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Shipment order" max_length="40" name="x_280686_beyondmov_shipment_order" type="collection">
+        <element label="Broker" max_length="32" name="broker" reference="sys_user" reference_qual="roles=x_280686_beyondmov.broker^EQ" reference_qual_condition="roles=x_280686_beyondmov.broker^EQ" type="reference"/>
+        <element label="Cargo Owned By" mandatory="true" max_length="32" name="cargo_owned_by" reference="sys_user" reference_qual="roles=x_280686_beyondmov.shipper^EQ" reference_qual_condition="roles=x_280686_beyondmov.shipper^EQ" type="reference"/>
+        <element choice="1" label="Cargo size" mandatory="true" max_length="40" name="cargo_size" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Small" sequence="1" value="Small"/>
+                <element inactive_on_update="false" label="Medium" sequence="5" value="Medium"/>
+                <element inactive_on_update="false" label="Standard" sequence="10" value="Standard"/>
+                <element inactive_on_update="false" label="Large" sequence="15" value="Large"/>
+            </choice>
+        </element>
+        <element label="Carrier" max_length="32" name="carrier" reference="sys_user" reference_qual="roles=x_280686_beyondmov.carrier^EQ" reference_qual_condition="roles=x_280686_beyondmov.carrier^EQ" type="reference"/>
+        <element label="Climate control needed" max_length="40" name="climate_control_needed" type="boolean"/>
+        <element label="Consignee" mandatory="true" max_length="32" name="consignee" reference="sys_user" reference_qual="roles=x_280686_beyondmov.consignee^EQ" reference_qual_condition="roles=x_280686_beyondmov.consignee^EQ" type="reference"/>
+        <element label="Delivery Date" mandatory="true" max_length="40" name="delivery_date" type="glide_date"/>
+        <element label="Delivery Location" mandatory="true" max_length="32" name="delivery_location" reference="cmn_location" type="reference"/>
+        <element label="Is fragile" max_length="40" name="is_fragile" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Pickup Date" mandatory="true" max_length="40" name="pickup_date" type="glide_date"/>
+        <element label="Pickup Location" mandatory="true" max_length="32" name="pickup_location" reference="cmn_location" type="reference"/>
+        <element label="Special instructions" max_length="1024" name="special_instructions" type="string"/>
+        <element choice="1" label="state" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Created" sequence="1" value="Created"/>
+                <element inactive_on_update="false" label="Broker Unassigned" sequence="5" value="Broker Unassigned"/>
+                <element inactive_on_update="false" label="Broker Assigned" sequence="10" value="Broker Assigned"/>
+                <element inactive_on_update="false" label="Carrier Unassigned" sequence="13" value="Carrier Unassigned"/>
+                <element inactive_on_update="false" label="Pending Carrier Quote" sequence="15" value="Pending Carrier Quote"/>
+                <element inactive_on_update="false" label="Quote pending approval" sequence="20" value="Quote pending approval"/>
+                <element inactive_on_update="false" label="Carrier Assigned" sequence="25" value="Carrier Assigned"/>
+                <element inactive_on_update="false" label="Cargo Pickedup" sequence="30" value="Cargo Pickedup"/>
+                <element inactive_on_update="false" label="Cargo Loaded to Vehicle" sequence="32" value="Cargo Loaded to Vehicle"/>
+                <element inactive_on_update="false" label="Cargo Intransit" sequence="35" value="Cargo Intransit"/>
+                <element inactive_on_update="false" label="Reached Destination" sequence="40" value="Reached Destination"/>
+                <element inactive_on_update="false" label="Attempting Delivery" sequence="45" value="Attempting Delivery"/>
+                <element inactive_on_update="false" label="Delivered" sequence="50" value="Delivered"/>
+                <element inactive_on_update="false" label="Delivery Failed" sequence="55" value="Delivery Failed"/>
+            </choice>
+        </element>
+        <element label="Tracker" max_length="32" name="tracker" reference="x_280686_beyondmov_shipment_tracker" type="reference"/>
+        <element label="Vehicle" max_length="32" name="vehicle" reference="x_280686_beyondmov_vehicle" type="reference"/>
+        <index name="index">
+            <element name="carrier"/>
+        </index>
+        <index name="index2">
+            <element name="consignee"/>
+        </index>
+        <index name="index3">
+            <element name="pickup_location"/>
+        </index>
+        <index name="index4">
+            <element name="cargo_owned_by"/>
+        </index>
+        <index name="index5">
+            <element name="tracker"/>
+        </index>
+        <index name="index6">
+            <element name="broker"/>
+        </index>
+        <index name="index7">
+            <element name="delivery_location"/>
+        </index>
+        <index name="index8">
+            <element name="vehicle"/>
+        </index>
+    </element>
+</database>
